@@ -14,7 +14,7 @@ export const trips: Trip[] = [
     id: 2,
     name: 'Autumn Roadtrip',
     emissionsOffsetInKg: 3560,
-    tripRating: 4.7,
+    tripRating: 3,
     durationInDays: 14,
     numberOfVisitedCountries: 1,
     imageUrl: 'https://lindaontherun.com/wp-content/uploads/2020/09/Fall-Road-Trips-Shenandoah.jpg',
@@ -26,7 +26,6 @@ export const trips: Trip[] = [
     tripRating: 4.7,
     durationInDays: 5,
     numberOfVisitedCountries: 1,
-
     imageUrl: 'https://www.tripnstay.com/wp-content/uploads/2020/04/Egypt.jpg',
   },
 ];
