@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:testing-library/recommended",
+    "plugin:jest-dom/recommended"
+  ],
+  "plugins": ["react-hooks", "jest-dom", "testing-library", "@emotion", "jest"],
+  "rules": {
+    "no-this-before-super": "error",
+    "no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }
+    ],
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-no-target-blank": "warn",
+    "react/jsx-uses-react": "off",
+    "react/jsx-boolean-value": "error",
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "warn",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
+  }
+}
