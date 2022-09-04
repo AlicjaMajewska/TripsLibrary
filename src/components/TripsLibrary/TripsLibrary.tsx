@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Heading } from '@chakra-ui/react';
-import styled from 'styled-components';
 import TripsAsBoxes from './TripsAsBoxes';
+import styled from '@emotion/styled';
 
 export default function TripsLibrary() {
   return (
