@@ -1,11 +1,12 @@
 {
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": { "project": ["./tsconfig.json"] },
   "extends": [
-    "react-app",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:testing-library/recommended",
-    "plugin:jest-dom/recommended"
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
-  "plugins": ["react-hooks", "jest-dom", "testing-library", "@emotion", "jest"],
+  "plugins": ["react-hooks", "@typescript-eslint"],
   "rules": {
     "no-this-before-super": "error",
     "no-unused-vars": [
@@ -16,15 +17,7 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-no-target-blank": "warn",
     "react/jsx-uses-react": "off",
-    "react/jsx-boolean-value": "error",
-    "react/react-in-jsx-scope": "off",
-    "jsx-a11y/anchor-is-valid": "warn",
-    "jest/no-disabled-tests": "warn",
-    "jest/no-focused-tests": "error",
-    "jest/no-identical-title": "warn",
-    "jest/prefer-to-have-length": "warn",
-    "jest/valid-expect": "error"
+    "react/react-in-jsx-scope": "off"
   }
 }
