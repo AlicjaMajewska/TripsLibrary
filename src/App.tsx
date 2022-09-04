@@ -1,13 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import GlobalStyles from './components/GlobalStyles/GlobalStyles';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import TripsLibrary from './components/TripsLibrary/TripsLibrary';
 
+const queryClient = new QueryClient();
 function App() {
   return (
     <Wrapper>
       <Header>A task</Header>
       <GlobalStyles />
-      <Main></Main>
+      <QueryClientProvider client={queryClient}>
+        <Main>
+          <TripsLibrary />
+        </Main>
+      </QueryClientProvider>
     </Wrapper>
   );
 }

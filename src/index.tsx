@@ -5,6 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+
+if (process.env.NODE_ENV === 'development') {
+  /* eslint @typescript-eslint/no-var-requires: "off" */
+  const { worker } = require('./mocks/browser');
+  worker.start();
+}
+
 root.render(
   <React.StrictMode>
     <App />
