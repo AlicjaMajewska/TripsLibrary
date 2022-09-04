@@ -19,7 +19,9 @@ const TripBox = ({ trip }: TripBoxProps) => {
   return (
     <InnerBox>
       <BackgroundImage alt="" src={trip.imageUrl} />
-      <Text fontSize="3xl">{trip.name}</Text>
+      <Text fontWeight={700} fontSize="2xl">
+        {trip.name}
+      </Text>
       <Text fontSize="sm">{`${numberOfCountriesMessage}, ${durationInDaysMessage}`}</Text>
       <EmissionsOffsetFixedWidth emissionOffsetInKg={trip.emissionsOffsetInKg} />
       <TripRatingStickToBottom rating={trip.tripRating} />

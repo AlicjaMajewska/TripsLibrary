@@ -24,6 +24,7 @@ export default function EmissionsOffset({
 }
 
 const Wrapper = styled.div`
+  font-weight: 600;
   background-color: #131315;
   color: white;
   display: flex;

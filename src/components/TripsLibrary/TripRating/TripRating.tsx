@@ -25,6 +25,7 @@ const Wrapper = styled.div`
   display: flex;
   padding: 12px;
   justify-content: space-between;
+  font-weight: 600;
 `;
 
 const RatingWithStarsWrapper = styled.div`
