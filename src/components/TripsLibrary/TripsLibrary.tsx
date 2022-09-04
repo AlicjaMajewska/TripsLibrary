@@ -1,16 +1,21 @@
 import React from 'react';
-import axios from 'axios';
-import { useQuery } from 'react-query';
-
-export type TripsLibraryProps = Record<string, never>;
+import { Grid, Heading } from '@chakra-ui/react';
+import styled from 'styled-components';
+import TripsAsBoxes from './TripsAsBoxes';
 
 export default function TripsLibrary() {
-  const { isLoading, error, data } = useQuery(['trips'], async () => {
-    const response = await axios.get('/trips');
-    return response.data;
-  });
-
-  console.log({ isLoading, error, data });
-
-  return <div className="TripsLibrary" />;
+  return (
+    <Wrapper>
+      <Heading paddingLeft={8}>Trips library</Heading>
+      <Grid padding={8} templateColumns="repeat(auto-fill, minmax(min(100%, 400px), 1fr))" gap={8}>
+        <TripsAsBoxes />
+      </Grid>
+    </Wrapper>
+  );
 }
+
+const Wrapper = styled.div`
+  height: 100%;
+  padding: 16px;
+  background-color: var(--background);
+`;
